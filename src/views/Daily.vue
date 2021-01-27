@@ -343,7 +343,7 @@ export default {
       height: 50px;
       line-height: 50px;
       text-align: center;
-      border: 1px solid #fc6a21;
+      border-top: 1px solid #fc6a21;
       border-bottom: 1px solid #fc6a21;
       background-color: #fff;
       z-index: 100;

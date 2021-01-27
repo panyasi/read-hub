@@ -67,6 +67,7 @@ export default {
   position: relative;
   padding: 0 22px;
   border-radius: 8px;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 8px;
   position: relative;
@@ -83,7 +84,8 @@ export default {
     cursor: pointer;
     position: relative;
     .title__content {
-      margin-right: 15px;
+      display: block;
+      text-align: justify;
       color: #333;
       cursor: pointer;
       &:hover {
@@ -94,7 +96,6 @@ export default {
   }
   .card-recommend {
     max-height: 110px;
-    margin-bottom: 30px;
     overflow: hidden;
     transition: all ease 0.8s;
     .recommend__content {
@@ -114,7 +115,6 @@ export default {
     }
     &.card-recommend--opened {
       max-height: 500px;
-      margin-bottom: 30px;
       position: relative;
       .recommend__content {
         display: block;
@@ -134,8 +134,9 @@ export default {
       }
     }
     &.card-btn--opened {
-      max-height: 40px;
-      height: 40px;
+      max-height: 50px;
+      height: 50px;
+      line-height: 50px;
       color: #909090;
     }
   }
@@ -152,23 +153,24 @@ export default {
       color: #333;
     }
   }
+  &.list-card--pc {
+    padding: 0 22px 15px;
+  }
   &.list-card--mobile {
     position: relative;
-    padding: 15px 15px 0;
-    border-radius: 2px;
+    padding: 15px;
     background-color: #fff;
-    border-radius: 2px;
     margin-bottom: 16px;
+    border-radius: 2px;
     z-index: 2;
+    overflow: hidden;
     .card-title {
       padding: 0 0 8px;
       position: unset;
     }
     .card-recommend {
-      margin-bottom: 20px;
       &.card-recommend--opened {
         max-height: 500px;
-        margin-bottom: 20px;
         position: relative;
         .recommend__content {
           display: block;
@@ -190,8 +192,9 @@ export default {
         overflow: hidden;
       }
       &.card-btn--opened {
-        max-height: 40px;
-        height: 40px;
+        max-height: 50px;
+        height: 50px;
+        line-height: 60px;
         color: #909090;
         text-align: center;
       }

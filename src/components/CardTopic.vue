@@ -75,7 +75,6 @@ export default {
     padding-bottom: 8px;
     padding-top: 30px;
     .title__content {
-      margin-right: 15px;
       color: #333;
       cursor: pointer;
       &:hover {
@@ -107,7 +106,6 @@ export default {
       }
       &.card-recommend--opened {
         max-height: 500px;
-        margin-bottom: 30px;
         position: relative;
         .recommend__content {
           display: block;
@@ -183,7 +181,7 @@ export default {
     }
   }
   &.list-card--mobile {
-    padding: 15px 15px 0;
+    padding: 15px;
     border-radius: 2px;
     background-color: #fff;
     border-radius: 8px;
@@ -197,7 +195,6 @@ export default {
     }
     .card-recommend {
       max-height: 110px;
-      margin-bottom: 20px;
       overflow: hidden;
       transition: all ease 0.8s;
       .recommend__content {
@@ -214,7 +211,6 @@ export default {
       }
       &.card-recommend--opened {
         max-height: 500px;
-        margin-bottom: 20px;
         position: relative;
         .recommend__content {
           display: block;
@@ -238,6 +234,7 @@ export default {
       &.card-btn--opened {
         max-height: 40px;
         height: 40px;
+        line-height: 50px;
         color: #909090;
         text-align: center;
       }
