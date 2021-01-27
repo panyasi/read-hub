@@ -3,6 +3,14 @@ import Daily from "@/views/Daily";
 
 export default [
   {
+    path: "/",
+    name: "Home",
+    component: Topic,
+    meta: {
+      title: "产品深度精选 - 首页"
+    }
+  },
+  {
     path: "/topic",
     name: "Topic",
     component: Topic,
