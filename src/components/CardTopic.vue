@@ -181,7 +181,7 @@ export default {
     }
   }
   &.list-card--mobile {
-    padding: 15px;
+    padding: 27px 15px;
     border-radius: 2px;
     background-color: #fff;
     border-radius: 8px;
@@ -198,12 +198,12 @@ export default {
       overflow: hidden;
       transition: all ease 0.8s;
       .recommend__content {
+        white-space: pre-line;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        text-align: justify;
         color: #737373;
         font-size: 15px;
         line-height: 1.8em;

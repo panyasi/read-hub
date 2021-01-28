@@ -47,8 +47,9 @@
           </div>
         </div>
         <div v-if="mode == 'mobile' && !hasSubscribe" class="subscribe-btn">
-          <i class="el-icon-circle-plus"></i>
-          订阅明天早报
+          <div class="btn__content">
+            <i class="el-icon-circle-plus"></i> 订阅明天早报
+          </div>
         </div>
       </div>
     </div>
@@ -198,7 +199,7 @@ export default {
     align-content: center;
   }
   .page-footer--mobile {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   .daily-page {
     width: 100%;
@@ -337,26 +338,37 @@ export default {
     }
     .subscribe-btn {
       position: fixed;
-      bottom: 0px;
+      bottom: 0;
       color: #fc6a21;
       width: 100%;
-      height: 50px;
-      line-height: 50px;
+      height: 90px;
+      padding-top: 20px;
       text-align: center;
-      border-top: 1px solid #fc6a21;
-      border-bottom: 1px solid #fc6a21;
       background-color: #fff;
       z-index: 100;
-      // &:before {
-      //   content: "";
-      //   position: absolute;
-      //   top: -41px;
-      //   left: 0;
-      //   box-sizing: border-box;
-      //   width: 100%;
-      //   height: 40px;
-      //   background: rgba(255, 255, 255, 0.6);
-      // }
+      .btn__content {
+        width: 60%;
+        height: 40px;
+        line-height: 40px;
+        margin: auto;
+        border: 1px solid #fc6a21;
+      }
+      &:before {
+        content: "";
+        pointer-events: none;
+        box-sizing: border-box;
+        border-top: 1px solid #dcdcdc;
+        height: 200%;
+        width: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
     }
   }
 }

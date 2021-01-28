@@ -104,7 +104,6 @@ export default {
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      text-align: justify;
       color: #737373;
       font-size: 15px;
       line-height: 1.8em;
@@ -158,7 +157,7 @@ export default {
   }
   &.list-card--mobile {
     position: relative;
-    padding: 15px;
+    padding: 20px 15px;
     background-color: #fff;
     margin-bottom: 16px;
     border-radius: 2px;

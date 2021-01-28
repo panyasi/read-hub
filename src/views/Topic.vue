@@ -48,7 +48,9 @@
         </div>
       </div>
     </div>
-    <page-footer></page-footer>
+    <page-footer
+      :class="[mode == 'pc' ? '' : 'page-footer--mobile']"
+    ></page-footer>
   </div>
 </template>
 
@@ -291,6 +293,11 @@ export default {
         }
       }
     }
+  }
+  .page-footer--mobile {
+    height: 24px;
+    max-height: 24px;
+    // padding: 25px 0 15px;
   }
 }
 </style>
